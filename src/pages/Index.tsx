@@ -4,7 +4,7 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">RETRO*DINER</div>
         <nav>
           <a href="#">Меню</a>
           <a href="#">О нас</a>
@@ -18,41 +18,46 @@ export default function Index() {
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              НАСТОЯЩИЙ
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              АМЕРИКАНСКИЙ <span>ВКУС</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Дайнер в духе 70-х — хрустящие бургеры, густые милкшейки и атмосфера, в которой хочется остаться навсегда.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Смотреть меню
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Забронировать стол
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div
+            className="hero-img"
+            style={{
+              backgroundImage: `url("https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/files/667a5d36-376e-4f27-a13b-3409f21adbbd.jpg")`,
+            }}
+          >
             <div className="sticker">
-              СВЕЖАК
+              ОТКРЫТО
               <br />
-              КАЖДЫЙ ДЕНЬ
+              ДО 02:00
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #РЕТРОВАЙБ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              С 1974
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * БУРГЕРЫ КАК В ДЕТСТВЕ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * МИЛКШЕЙКИ НА ЛЮБОЙ ВКУС *
+            БУРГЕРЫ КАК В ДЕТСТВЕ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * МИЛКШЕЙКИ НА ЛЮБОЙ ВКУС
           </div>
         </div>
 
@@ -85,11 +90,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Биг Ретро</h3>
+                  <span className="price">690 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Двойная котлета смэш, фирменный соус «Золотые 70-е», маринованный лук и хрустящий бекон на бриоши.
                 </p>
               </div>
             </div>
@@ -97,11 +102,11 @@ export default function Index() {
             {/* Item 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+                Новинка
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Клаб сэндвич"
               />
               <div className="menu-card-body">
                 <div
@@ -112,10 +117,10 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Диско Клаб</h3>
+                  <span className="price">550 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Тройной клаб с индейкой, авокадо, беконом и домашним айоли.</p>
               </div>
             </div>
 
@@ -125,8 +130,8 @@ export default function Index() {
                 Популярное
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Милкшейк"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +142,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Винтажный Шейк</h3>
+                  <span className="price">390 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Густой молочный коктейль с натуральным мороженым — клубника, шоколад или ваниль.
                 </p>
               </div>
             </div>
@@ -150,10 +155,9 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">ВАЙ­БЧЕ­К ПРОЙДЕН.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Мы не просто кормим — мы переносим тебя в 1974-й. Виниловые пластинки на стенах, неоновые вывески и кожаные диваны. Каждый уголок создан для твоего идеального вечера. Резерв не обязателен — просто приходи.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Наша история
@@ -164,31 +168,31 @@ export default function Index() {
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @RETRO.DINER
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Дайнер 1"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Дайнер 2"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Дайнер 3"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Дайнер 4"
               />
             </div>
           </div>
@@ -197,9 +201,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">RETRO*DINER</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Твоё место для настоящего американского вкуса и лоу-фай атмосферы. Открыты с 2024, но ощущается как 1974.
           </p>
         </div>
         <div className="footer-links">
@@ -230,16 +234,16 @@ export default function Index() {
         <div className="footer-links">
           <h4>Часы работы</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
+            <li>Вт–Чт: 12:00 – 23:00</li>
+            <li>Пт–Сб: 12:00 – 02:00</li>
+            <li>Вс: 11:00 – 22:00</li>
             <li>Пн: Выходной</li>
           </ul>
         </div>
         <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+          <span>© 2024 RETRO DINER</span>
+          <span>ВКУС ЗОЛОТЫХ 70-Х</span>
+          <span>VK / TG / IG</span>
         </div>
       </footer>
     </>
