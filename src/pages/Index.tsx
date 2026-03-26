@@ -1,250 +1,272 @@
 export default function Index() {
   return (
     <>
-      <div className="grain-overlay" />
-
-      <header className="header">
-        <div className="logo">RETRO*DINER</div>
-        <nav>
-          <a href="#">Меню</a>
-          <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
-        </nav>
-        <button className="btn-cta">Забронировать</button>
+      {/* HEADER */}
+      <header className="site-header">
+        <div className="header-inner">
+          <div className="site-logo">
+            Габдулла Тукай
+            <span>1886 – 1913</span>
+          </div>
+          <nav className="header-nav">
+            <a href="#balacagy" className="nav-link">Балачагы</a>
+            <a href="#jaek" className="nav-link">Җаек чоры</a>
+            <a href="#kazan" className="nav-link">Казан чоры</a>
+            <a href="#makhabbat" className="nav-link">Мәхәббәте</a>
+            <a href="#bugen" className="nav-link">Бүгенге көндә</a>
+          </nav>
+        </div>
       </header>
 
-      <main>
-        <section className="hero">
-          <div className="hero-content">
+      {/* HERO */}
+      <section className="hero-section">
+        <div className="hero-inner">
+          <div>
+            <div className="hero-eyebrow">Татар халык шагыйре</div>
             <h1 className="hero-title">
-              НАСТОЯЩИЙ
-              <br />
-              АМЕРИКАНСКИЙ <span>ВКУС</span>
+              Габдулла Тукай
             </h1>
-            <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Дайнер в духе 70-х — хрустящие бургеры, густые милкшейки и атмосфера, в которой хочется остаться навсегда.
+            <span className="hero-years">1886 – 1913</span>
+            <p className="hero-subtitle">
+              Татар халык шагыйре, әдәби тәнкыйтьче, публицист,
+              яңа заман татар әдәбиятына нигез салучы.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-              <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Смотреть меню
-              </button>
-              <button className="btn-cta" style={{ background: "white" }}>
-                Забронировать стол
-              </button>
-            </div>
           </div>
-          <div
-            className="hero-img"
-            style={{
-              backgroundImage: `url("https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/files/667a5d36-376e-4f27-a13b-3409f21adbbd.jpg")`,
-            }}
-          >
-            <div className="sticker">
-              ОТКРЫТО
-              <br />
-              ДО 02:00
-            </div>
-            <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #РЕТРОВАЙБ
-            </div>
-            <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              С 1974
-            </div>
-          </div>
-        </section>
-
-        <div className="marquee">
-          <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КАК В ДЕТСТВЕ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * МИЛКШЕЙКИ НА ЛЮБОЙ ВКУС *
-            БУРГЕРЫ КАК В ДЕТСТВЕ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * МИЛКШЕЙКИ НА ЛЮБОЙ ВКУС
+          <div className="hero-photo-wrap">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tukay.jpg/800px-Tukay.jpg"
+              alt="Габдулла Тукай"
+              className="hero-photo"
+            />
           </div>
         </div>
+      </section>
 
-        <section className="section-padding">
-          <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
-            <a
-              href="#"
-              className="text-sm md:text-base"
-              style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
-            >
-              Всё меню
-            </a>
+      {/* NAV TABS */}
+      <nav className="sections-nav">
+        <div className="sections-nav-inner">
+          <a href="#balacagy" className="section-tab">Балачагы</a>
+          <a href="#jaek" className="section-tab">Җаек чоры</a>
+          <a href="#kazan" className="section-tab">Казан чоры</a>
+          <a href="#makhabbat" className="section-tab">Мәхәббәте</a>
+          <a href="#bugen" className="section-tab">Тукай бүгенге көндә</a>
+        </div>
+      </nav>
+
+      {/* CONTENT */}
+      <main className="content-wrap">
+
+        {/* 1. БАЛАЧАГЫ */}
+        <section id="balacagy" className="content-section">
+          <h2 className="section-heading">Балачагы</h2>
+
+          <p className="section-text">
+            Булачак шагыйрь хәзерге Арча районының Кушлавыч авылында 1886 елның 26 апрелендә Мөхәммәтгариф мулла гаиләсендә дөньяга килә. Малай туып дүрт ай ярым үткәч, Мөхәммәтгариф хәзрәт үлеп китә. Тол калган Мәмдүдәне (Габдулланың әнисен) Сасна мулласына кияүгә бирәләр. Бәләкәй Габдулланы авылның Шәрифә исемле фәкыйрь бер карчыгына вакытлыча асрамага калдыралар. Шунда аның газаплы, авыр тормышы башлана.
+          </p>
+          <p className="section-text">
+            Бераз соңрак әнисе баланы үзе янына ала. Ләкин бәхетле чаклар озак булмый: әнисе дә вафат була. Үги атасы-мулла Габдулланы, озак та тормастан, әнисе ягыннан бабасына — Өчиле авылына кайтарып җибәрә. Ә инде бу гаиләдә балалар болай да күп була, шуңа Апуш күп кыенлыклар кичерә.
+          </p>
+          <p className="section-text">
+            Бәләкәй Габдулла монда ятимлекне генә түгел, ачлыкны да татый. Бабасы, күрше авыллардан икмәк сыныклары теләнеп алып кайтып, балаларын ач үлемнән саклый. Ә бервакыт баланы, Казанга баручы бер ямщиккә утыртып, ерак, билгесез сәфәргә озаталар.
+          </p>
+
+          <div className="quote-block">
+            <p>«Асрарга бала бирәм, кем ала?» — дип кычкырып йөри...</p>
           </div>
 
-          <div className="menu-grid">
-            {/* Item 1 */}
-            <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
-              <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
-              />
-              <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Биг Ретро</h3>
-                  <span className="price">690 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Двойная котлета смэш, фирменный соус «Золотые 70-е», маринованный лук и хрустящий бекон на бриоши.
-                </p>
-              </div>
-            </div>
+          <p className="section-text">
+            Халык арасыннан бер кеше чыгып малайны үзләренә алып кайта. Яңа бистә һөнәрчесе Мөхәммәтвәли абзый белән Газизә абыстай шулай итеп малайлы булалар. Тукай өчен бу исә — бишенче оя. Бәләкәй Габдулла бу гаиләсендә ике ел буена ярыйсы гына яшәгәч, тагын артып кала.
+          </p>
+          <p className="section-text">
+            Тырыша торгач, малайны Кырлай исемле авылдан ир баласыз Сәгъди абзыйга уллыкка озаталар. Шулай ул алтынчы гаиләгә күчә. Оядан ояга күчеп җылылык эзләп йөргән бу сабыйга Кырлай мәрхәмәтлерәк булып чыга. Беренчедән, бәләкәй Габдулла монда башка урыннарга караганда озаграк яши, хәтта сабакка йөри башлый. Икенчедән, Кырлай авылында ул үзенең киләчәк иҗаты өчен нигез булачак бик күп рухи байлык туплый.
+          </p>
+          <p className="section-text">
+            Рухи яктан авыл, крестьян тормышын тәмам күңеленә сеңдергән Тукайны көннәрдән бер көнне Кушлавыч авылының Бәдретдин исемле кешесе эзләп таба да Уральскига алып китә.
+          </p>
 
-            {/* Item 2 */}
-            <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Новинка
-              </span>
-              <img
-                src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Клаб сэндвич"
-              />
-              <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Диско Клаб</h3>
-                  <span className="price">550 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Тройной клаб с индейкой, авокадо, беконом и домашним айоли.</p>
-              </div>
-            </div>
+          <div className="quote-block">
+            <p>«Ахырда әни: "Онытма безне, онытма! Безне онытсаң, тәмугъ кисәве булырсың", — дип, ахыр сүзен кычкырды да, без авылдан чыгып киттек».</p>
+          </div>
 
-            {/* Item 3 */}
-            <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
-              </span>
-              <img
-                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Милкшейк"
-              />
-              <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Винтажный Шейк</h3>
-                  <span className="price">390 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Густой молочный коктейль с натуральным мороженым — клубника, шоколад или ваниль.
-                </p>
-              </div>
+          <p className="section-text">
+            Шулай Тукайның авыр, хәсрәтле балачак чоры тәмамлана. Ул Җаекка юнәлә.
+          </p>
+        </section>
+
+        {/* 2. ҖАЕК ЧОРЫ */}
+        <section id="jaek" className="content-section">
+          <h2 className="section-heading">Җаек чоры</h2>
+
+          <p className="section-text">
+            Тукай барып урнашкан нигез Казан артыннан була: апасы Газизә, җизнәсе Галиәсгар Госманов. Бу вакытта Уральск шәһәрендә өч мәдрәсә булган: «Мотыйгыя», «Рәкыйбия» һәм «Гайния». Җизнәсе Тукайны «Мотыйгыя»га урнаштыра. Мондагы тормыш яшь Габдулланың рухына зур тәэсир ясый. Мәдрәсәдә әдәби рух бик көчле була, мәдрәсә хуҗасы Мотыйгулла хәзрәтнең өендә рояль тора. Тукай аның улы Камил белән тиз дуслаша.
+          </p>
+          <p className="section-text">
+            Белемгә сусаган Тукай параллель рәвештә өчьеллык рус мәктәбенә кереп укый башлый. Мәдрәсәдә гарәп, төрек, фарсы телләрен бик яхшы үзләштергән малай кинәт кенә рус һәм Аурупа әдәбияты дөньясына чума.
+          </p>
+          <p className="section-text">
+            1905 ел революциясе дулкыннары Уральскига килеп җиткәндә, Тукайга 19 яшь була. Уральск халкы тарихта беренче мәртәбә ачыктан-ачык Беренче май демонстрациясен уздыра. Революция биргән мөмкинлекләрдән файдаланып, Камил Мотыйгый «Уралец» дигән газета нәшриятын типографиясе белән сатып ала. Тукайның тормышында яңа этап башлана, ул типографиягә наборщик булып эшкә урнаша.
+          </p>
+          <p className="section-text">
+            Тукай 1905–1907 елларда бик кыю публицистик мәкаләләр белән чыгыш ясый. Уральск төбәгендәге кадимчеләр, байларны тәнкыйть итә, тынгысыз журналист буларак таныла.
+          </p>
+          <p className="section-text">
+            Җаек — шагыйрьнең журналист һәм шагыйрь буларак канат ныгыткан урыны. 1905 елның сентябрендә үк аның шигырьләре басыла. Ноябрьдә «Фикер» газетасы чыга башлый. Бераздан «Әл-гасрел җәдид» күренә. Тукай инде монысында фактик редактор. 1906 елның июнендә сатирик журнал «Уклар» дөнья күрә — монда да фактик редактор Тукай.
+          </p>
+          <p className="section-text">
+            Уральск шагыйре Габдулла Тукайны инде Казанда, Оренбургта, Петербургта яхшы беләләр. Ләкин туган туфрак шагыйрьне Казанга тарта. Уральскида язган «Пар ат» шигырендә аның инде рухы белән Казанда яши башлаганлыгы күренә.
+          </p>
+        </section>
+
+        {/* 3. КАЗАН ЧОРЫ */}
+        <section id="kazan" className="content-section">
+          <h2 className="section-heading">Казан чоры</h2>
+
+          <p className="section-text">
+            1907 елның көзеннән Тукайның Казан чоры — халкына, Ватанына шигъри сүзен әйтер өчен бирелгән биш ел да сигез айлык дәвере башлана. Тукай Казанга килүгә «Әл-ислах» газетасында, «Яшен» журналында актив катнаша башлый. Яңа дуслар да табыла: Фатих Әмирхан, Хөсәен Ямашев, Кәбир Бәкер, Галиәсгар Камал.
+          </p>
+          <p className="section-text">
+            Шул чорда Тукай белән Фатих Әмирхан арасында кыска, ләкин мәңгелек дуслык урнаша. Тукайның дөньяга карашларын алга таба үстерүдә иң зур рольне Фатих Әмирхан уйнаган.
+          </p>
+          <p className="section-text">
+            Тукай килгәнче Казанда халык әдәбияты, балалар әдәбияты мәсьәләләре беркайчан да проблема итеп күтәрелмәгән була. Тукай Казанга килгәч, иң кирәкле ике юнәлешне сайлап ала: халык әдәбиятын күтәрү һәм яшь буын өчен әсәрләр, уку китаплары, дәреслекләр язу. Аның Казандагы кыска гомерендә балалар өчен булган унөч, халык иҗаты буенча дүрт, барлыгы утыздан артык китабы басылып чыга.
+          </p>
+
+          <div className="facts-grid">
+            <div className="fact-card">
+              <div className="fact-number">30+</div>
+              <div className="fact-label">Казанда басылган китаплар</div>
             </div>
+            <div className="fact-card">
+              <div className="fact-number">13</div>
+              <div className="fact-label">Балалар өчен китаплар</div>
+            </div>
+            <div className="fact-card">
+              <div className="fact-number">5,5</div>
+              <div className="fact-label">Казанда яшәгән еллар</div>
+            </div>
+          </div>
+
+          <p className="section-text">
+            Тукай поэзиясенең чәчәк аткан вакыты — Казан чоры. Китап нәширләре алдан ук аның әсәрләрен басарга вәгъдә биреп торалар. Тукайның шагыйрь буларак дәрәҗәсе шулкадәр зур югарылыкка менә ки, «Шура» журналы Тукайның байларны тәнкыйть иткән үткен социаль мотивлы «Сайфия» шигырен дөньяга чыгара.
+          </p>
+          <p className="section-text">
+            Күптәннән килгән үпкә авыруы көннән-көн көчәя. 1912 елның мартында зур фаҗига кичерә: Хөсәен Ямашев кинәт үлеп китә. Тукай Уфада, Петербургта була, аннан тагын Уфага килә. Казакъ даласына барып кымыз эчә.
+          </p>
+          <p className="section-text">
+            Шулай да гомер елларының инде санаулы гына калганын Тукай аңлый. Шуңа күрә бер генә көнен дә әрәм итми, халыкка әйтәсе сүзләрен әйтеп бетерергә ашыга.
+          </p>
+
+          <div className="quote-block">
+            <p>Үтте инде, дустларым, ул үткән эш, ни булса ул;<br />Инде эшлик саф, ачык күзләр белән, чын аң белән.</p>
           </div>
         </section>
 
-        <section className="retro-vibe">
-          <div>
-            <h2 className="vibe-title">ВАЙ­БЧЕ­К ПРОЙДЕН.</h2>
-            <p className="vibe-text">
-              Мы не просто кормим — мы переносим тебя в 1974-й. Виниловые пластинки на стенах, неоновые вывески и кожаные диваны. Каждый уголок создан для твоего идеального вечера. Резерв не обязателен — просто приходи.
-            </p>
-            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Наша история
-            </button>
+        {/* 4. МӘХӘББӘТЕ */}
+        <section id="makhabbat" className="content-section">
+          <h2 className="section-heading">Тукайның мәхәббәте</h2>
+
+          <div className="quote-block">
+            <p>«Мин аның шигырьләрен аерым бер ләззәт һәм дәрт белән укыйм. Үз телең белән әйтеп бирә алмый торган нәрсәләрне матур, үткен каләм белән әйтә белүче кешене күрәсем килә башлады».</p>
+            <cite>— Зәйтүнә Мәүлүдова истәлекләреннән</cite>
           </div>
-          <div className="vibe-img"></div>
+
+          <p className="section-text">
+            Зәйтүнә Мәүлүдова 1893 елда Чистайда сәүдәгәр гаиләсендә туа. Гаиләдә китап укырга яраталар, газета-журналлар алдыралар. 1907 елда Зәйтүнә гаиләсе белән Казанга күчеп килә. 15 яшьлек кыз Тукай шигырьләренә гашыйк була.
+          </p>
+
+          <p className="section-text">
+            Мирсәй Гарифның «Мәңгелек мәхәббәт» китабында ике яшь йөрәкнең очрашулары турында Зәйтүнәнең мондый истәлекләре язылган: 1908 елның март башларында Фатих Әмирхан тәрәзә яныннан: «Кая барасыз, тиздән монда Тукай киләчәк», — диде.
+          </p>
+
+          <div className="quote-block">
+            <p>«Тукай күрешкәндә безгә бер генә караш ташлады, аннан кулларыбызга текәлеп кенә: "Исән-сау йөрисезме?" — дип куйды. Бу минем Габдулла Тукаев белән беренче тапкыр очрашуым булды».</p>
+            <cite>— Зәйтүнә Мәүлүдова</cite>
+          </div>
+
+          <p className="section-text">
+            Казандагы тормышның авырлыгы Чистайга кайтарырга мәҗбүр итә. Кызлар соңгы тапкыр «Әл-ислах» редакциясенә баралар. «Бергәләп урамга чыктык. Китәчәгебезне ишеткәч, шагыйрь башын аска иеп, бик жәл, диде», — дип язып калдыра Зәйтүнә. Бу Зәйтүнәнең яраткан шагыйрен соңгы тапкыр күрүе була.
+          </p>
+          <p className="section-text">
+            Тукайның, Зәйтүнәгә багышлап, кырыктан артык шигырь язганлыгы мәгълүм. Фатих Әмирхан да бер хатының кырыена: «Тукай да сезне бик сагына», — дип язып куйган була.
+          </p>
+
+          <div className="quote-block">
+            <p>«Тукай үлгәнне ишеткәч, бик еладым. Иң элек зиратка чаптым. Тукай кабере — кергәч тә капканың уң ягында. Кабер янында Коръән укып, озак елап утырдым».</p>
+            <cite>— Зәйтүнә Мәүлүдова</cite>
+          </div>
+
+          <div className="quote-block">
+            <p>«Мин Тукайга үзе мәхәббәт итә торган бер кыздан качып йөрүенең сәбәбен аңламаганымны сөйләдем. Ул озак җавап бирми торганнан соң, үзенең бер күзен ишарә белән күрсәтеп: "Печать проклятия!" — диде».</p>
+            <cite>— Фатих Әмирхан истәлекләреннән</cite>
+          </div>
+
+          <p className="section-text">
+            Зәйтүнә ханым 1957 елда Казанда 64 яшендә вафат була. Татар зиратындагы кабере 64 ел узгач, 2021 елда табыла.
+          </p>
         </section>
 
-        <section className="section-padding">
-          <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @RETRO.DINER
-          </h2>
-          <div className="social-grid">
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Дайнер 1"
-              />
-            </div>
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Дайнер 2"
-              />
-            </div>
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Дайнер 3"
-              />
-            </div>
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Дайнер 4"
-              />
-            </div>
-          </div>
+        {/* 5. БҮГЕНГЕ КӨНДӘ */}
+        <section id="bugen" className="content-section">
+          <h2 className="section-heading">Тукай безнең көннәрдә</h2>
+
+          <p className="section-text">
+            Тукай исеме ничектер үзеннән-үзе халыкның мәдәниятен, әдәбият-сәнгатен берләштерүче, оештыручы мәгънәви бер уртак исемгә әйләнде. Аның әсәрләре күп тапкырлар басылды — зур басмаларыннан берсе хәтта авыр сугыш елларында да (1943) дөнья күрде.
+          </p>
+          <p className="section-text">
+            Нигә шулай? Чөнки бу бөек иҗат — дөнья мәдәниятының аерылгысыз бер өлеше. Бөек Тукайның әкият-поэмасына таянып Фәрит Яруллин иҗат иткән «Шүрәле» балеты Көнбатышта йөреп кайтты, һәрвакыт югары уңыш казанды. Тукай җырлары бүген Европада, Америкада, Африкада яңгырый. Финляндиядә «Тукай җәмгыяте» яшәп килә.
+          </p>
+
+          <p className="section-text" style={{ fontWeight: 600, color: 'var(--emerald)', marginBottom: 8 }}>
+            Тукай исеме белән аталган урамнар:
+          </p>
+          <ul className="list-emerald" style={{ marginBottom: 32 }}>
+            <li>Казанда, Уфада, Йошкар-Олада</li>
+            <li>Чиләбедә, Ижевскида</li>
+            <li>Алматы, Уральск, Ташкент</li>
+            <li>Нукус, Анкара шәһәрләрендә</li>
+            <li>Чаллыда сквер, Истанбулда парк</li>
+            <li>Тарсуста бульвар</li>
+          </ul>
+
+          <p className="section-text" style={{ fontWeight: 600, color: 'var(--emerald)', marginBottom: 8 }}>
+            Тукайга куелган һәйкәлләр:
+          </p>
+          <ul className="list-emerald" style={{ marginBottom: 32 }}>
+            <li>Казанда Тукай скверында</li>
+            <li>Казанда Театр урамында</li>
+            <li>Санкт-Петербургның Зверинский урамында</li>
+            <li>Уральскида китапханәсе скверында</li>
+            <li>Мәскәүдә Новокузнецкая чатында</li>
+            <li>Анкарада Тукай урамында</li>
+            <li>Казахстанның Сәмәй шәһәрендә</li>
+            <li>Троицк урамында истәлек тактасы</li>
+          </ul>
+
+          <p className="section-text" style={{ fontWeight: 600, color: 'var(--emerald)', marginBottom: 8 }}>
+            Тукайга багышланган өч музей:
+          </p>
+          <ul className="list-emerald" style={{ marginBottom: 32 }}>
+            <li>Казанда Милли музей бүлекчәсе</li>
+            <li>Арча районы Яңа Кырлай авылында</li>
+            <li>Казахстанның Уральск шәһәрендә</li>
+          </ul>
+
+          <p className="section-text">
+            Тукай исеме Казан аэропортына, дәүләт филармониясенә, Уральск типографиясенә бирелгән. Дәүләт премиясе дә Тукай исемен йөртә. Казанда ел саен Тукай истәлегенә шигырь бәйрәме уза.
+          </p>
         </section>
+
       </main>
 
-      <footer>
-        <div>
-          <div className="footer-logo">RETRO*DINER</div>
-          <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для настоящего американского вкуса и лоу-фай атмосферы. Открыты с 2024, но ощущается как 1974.
-          </p>
-        </div>
-        <div className="footer-links">
-          <h4>Навигация</h4>
-          <ul>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                О нас
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
-              </a>
-            </li>
-            <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer-links">
-          <h4>Часы работы</h4>
-          <ul>
-            <li>Вт–Чт: 12:00 – 23:00</li>
-            <li>Пт–Сб: 12:00 – 02:00</li>
-            <li>Вс: 11:00 – 22:00</li>
-            <li>Пн: Выходной</li>
-          </ul>
-        </div>
-        <div className="footer-bottom">
-          <span>© 2024 RETRO DINER</span>
-          <span>ВКУС ЗОЛОТЫХ 70-Х</span>
-          <span>VK / TG / IG</span>
-        </div>
+      {/* FOOTER */}
+      <footer className="site-footer">
+        <div className="footer-logo">Габдулла Тукай</div>
+        <div className="footer-divider"></div>
+        <p className="footer-desc">
+          Татар халык шагыйре, яңа заман татар әдәбиятына нигез салучы.
+        </p>
+        <p className="footer-author">Автор: Мөслимә Адиева</p>
+        <p className="footer-year">© 2026</p>
       </footer>
     </>
   );
