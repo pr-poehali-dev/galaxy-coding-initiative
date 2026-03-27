@@ -246,7 +246,7 @@
 .sections-nav-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 12px;
   display: flex;
   gap: 0;
   overflow-x: auto;
@@ -267,6 +267,21 @@
   white-space: nowrap;
   transition: all 0.2s;
   display: block;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sections-nav-inner {
+    padding: 0 4px;
+  }
+
+  .section-tab {
+    font-size: 11px;
+    padding: 12px 6px;
+    flex: 1;
+    text-align: center;
+  }
 }
 
 .section-tab:hover {
