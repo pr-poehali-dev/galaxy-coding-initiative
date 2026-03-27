@@ -56,6 +56,15 @@ export default function Index() {
       {/* CONTENT */}
       <main className="content-wrap">
 
+        {/* PHOTO */}
+        <div style={{ textAlign: 'center', padding: '48px 24px 0' }}>
+          <img
+            src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/13065d1c-090a-47c9-88b7-c6e3ecbd3724.jpeg"
+            alt="Габдулла Тукай"
+            style={{ maxWidth: 320, width: '100%', borderRadius: 8, boxShadow: '0 4px 24px rgba(0,0,0,0.12)' }}
+          />
+        </div>
+
         {/* 1. БАЛАЧАГЫ */}
         <section id="balacagy" className="content-section">
           <h2 className="section-heading">Балачагы</h2>
