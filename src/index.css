@@ -510,6 +510,22 @@
   object-fit: cover;
 }
 
+/* Портретные фото — компактные, по центру */
+.section-image-wrap.portrait {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+}
+
+/* Фото без рамки — в натуральный размер */
+.section-image-wrap.no-border {
+  border: none;
+  box-shadow: none;
+  border-radius: 12px;
+  background: none;
+}
+
 .section-images-row {
   display: grid;
   grid-template-columns: 1fr;

@@ -105,7 +105,7 @@ export default function Index() {
         <section id="jaek" className="content-section">
           <h2 className="section-heading">Җаек чоры</h2>
 
-          <div className="section-image-wrap">
+          <div className="section-image-wrap portrait">
             <img
               src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/45d33fb1-b5ec-46a4-9eed-330a2003b9cc.jpeg"
               alt="Җаек чоры"
@@ -137,7 +137,7 @@ export default function Index() {
         <section id="kazan" className="content-section">
           <h2 className="section-heading">Казан чоры</h2>
 
-          <div className="section-image-wrap">
+          <div className="section-image-wrap portrait">
             <img
               src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/e113c90b-c5d8-4af2-bd83-9f808448f322.jpeg"
               alt="Казан чоры"
@@ -189,7 +189,7 @@ export default function Index() {
         <section id="makhabbat" className="content-section">
           <h2 className="section-heading">Тукайның мәхәббәте</h2>
 
-          <div className="section-image-wrap">
+          <div className="section-image-wrap portrait">
             <img
               src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/34aa76ba-145d-4e17-b8fb-7521a0b0a281.jpeg"
               alt="Зәйтүнә Мәүлүдова"
@@ -249,7 +249,7 @@ export default function Index() {
                 className="section-image"
               />
             </div>
-            <div className="section-image-wrap">
+            <div className="section-image-wrap no-border">
               <img
                 src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/55838644-366c-4152-ae88-13d436f0e888.jpeg"
                 alt="Тукай һәйкәле Кырлайда"
