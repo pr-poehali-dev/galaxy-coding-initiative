@@ -60,6 +60,14 @@ export default function Index() {
         <section id="balacagy" className="content-section">
           <h2 className="section-heading">Балачагы</h2>
 
+          <div className="section-image-wrap">
+            <img
+              src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/f493b78d-636e-44bf-8cb7-aeb903e78b1f.png"
+              alt="Балачак"
+              className="section-image"
+            />
+          </div>
+
           <p className="section-text">
             Булачак шагыйрь хәзерге Арча районының Кушлавыч авылында 1886 елның 26 апрелендә Мөхәммәтгариф мулла гаиләсендә дөньяга килә. Малай туып дүрт ай ярым үткәч, Мөхәммәтгариф хәзрәт үлеп китә. Тол калган Мәмдүдәне (Габдулланың әнисен) Сасна мулласына кияүгә бирәләр. Бәләкәй Габдулланы авылның Шәрифә исемле фәкыйрь бер карчыгына вакытлыча асрамага калдыралар. Шунда аның газаплы, авыр тормышы башлана.
           </p>
@@ -97,6 +105,14 @@ export default function Index() {
         <section id="jaek" className="content-section">
           <h2 className="section-heading">Җаек чоры</h2>
 
+          <div className="section-image-wrap">
+            <img
+              src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/45d33fb1-b5ec-46a4-9eed-330a2003b9cc.jpeg"
+              alt="Җаек чоры"
+              className="section-image"
+            />
+          </div>
+
           <p className="section-text">
             Тукай барып урнашкан нигез Казан артыннан була: апасы Газизә, җизнәсе Галиәсгар Госманов. Бу вакытта Уральск шәһәрендә өч мәдрәсә булган: «Мотыйгыя», «Рәкыйбия» һәм «Гайния». Җизнәсе Тукайны «Мотыйгыя»га урнаштыра. Мондагы тормыш яшь Габдулланың рухына зур тәэсир ясый. Мәдрәсәдә әдәби рух бик көчле була, мәдрәсә хуҗасы Мотыйгулла хәзрәтнең өендә рояль тора. Тукай аның улы Камил белән тиз дуслаша.
           </p>
@@ -120,6 +136,14 @@ export default function Index() {
         {/* 3. КАЗАН ЧОРЫ */}
         <section id="kazan" className="content-section">
           <h2 className="section-heading">Казан чоры</h2>
+
+          <div className="section-image-wrap">
+            <img
+              src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/e113c90b-c5d8-4af2-bd83-9f808448f322.jpeg"
+              alt="Казан чоры"
+              className="section-image"
+            />
+          </div>
 
           <p className="section-text">
             1907 елның көзеннән Тукайның Казан чоры — халкына, Ватанына шигъри сүзен әйтер өчен бирелгән биш ел да сигез айлык дәвере башлана. Тукай Казанга килүгә «Әл-ислах» газетасында, «Яшен» журналында актив катнаша башлый. Яңа дуслар да табыла: Фатих Әмирхан, Хөсәен Ямашев, Кәбир Бәкер, Галиәсгар Камал.
@@ -165,6 +189,14 @@ export default function Index() {
         <section id="makhabbat" className="content-section">
           <h2 className="section-heading">Тукайның мәхәббәте</h2>
 
+          <div className="section-image-wrap">
+            <img
+              src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/34aa76ba-145d-4e17-b8fb-7521a0b0a281.jpeg"
+              alt="Зәйтүнә Мәүлүдова"
+              className="section-image"
+            />
+          </div>
+
           <div className="quote-block">
             <p>«Мин аның шигырьләрен аерым бер ләззәт һәм дәрт белән укыйм. Үз телең белән әйтеп бирә алмый торган нәрсәләрне матур, үткен каләм белән әйтә белүче кешене күрәсем килә башлады».</p>
             <cite>— Зәйтүнә Мәүлүдова истәлекләреннән</cite>
@@ -208,6 +240,16 @@ export default function Index() {
         {/* 5. БҮГЕНГЕ КӨНДӘ */}
         <section id="bugen" className="content-section">
           <h2 className="section-heading">Тукай безнең көннәрдә</h2>
+
+          <div className="section-images-row">
+            <div className="section-image-wrap">
+              <img
+                src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/d215eaae-0886-4a6c-acf9-8a42415d520f.jpeg"
+                alt="Тукай һәйкәле"
+                className="section-image"
+              />
+            </div>
+          </div>
 
           <p className="section-text">
             Тукай исеме ничектер үзеннән-үзе халыкның мәдәниятен, әдәбият-сәнгатен берләштерүче, оештыручы мәгънәви бер уртак исемгә әйләнде. Аның әсәрләре күп тапкырлар басылды — зур басмаларыннан берсе хәтта авыр сугыш елларында да (1943) дөнья күрде.
