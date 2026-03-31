@@ -64,7 +64,7 @@ export default function Index() {
             <img
               src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/f493b78d-636e-44bf-8cb7-aeb903e78b1f.png"
               alt="Балачак"
-              className="section-image"
+              className="section-image cover"
             />
           </div>
 
@@ -241,11 +241,18 @@ export default function Index() {
         <section id="bugen" className="content-section">
           <h2 className="section-heading">Тукай безнең көннәрдә</h2>
 
-          <div className="section-images-row">
+          <div className="section-images-row two-cols">
             <div className="section-image-wrap">
               <img
                 src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/d215eaae-0886-4a6c-acf9-8a42415d520f.jpeg"
                 alt="Тукай һәйкәле"
+                className="section-image"
+              />
+            </div>
+            <div className="section-image-wrap">
+              <img
+                src="https://cdn.poehali.dev/projects/d39a123a-75f1-4b51-9b04-4afde5174c2d/bucket/55838644-366c-4152-ae88-13d436f0e888.jpeg"
+                alt="Тукай һәйкәле Кырлайда"
                 className="section-image"
               />
             </div>

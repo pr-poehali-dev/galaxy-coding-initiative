@@ -500,9 +500,14 @@
 
 .section-image {
   width: 100%;
+  display: block;
+  object-fit: contain;
+  background: #f5f5f2;
+}
+
+.section-image.cover {
   max-height: 420px;
   object-fit: cover;
-  display: block;
 }
 
 .section-images-row {
